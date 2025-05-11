@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GPT Chat Widget</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-button" onclick="toggleChat()">Need help?</div>
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-header">💬 AI Assistant</div>
+    <div class="chat-messages" id="chatMessages"></div>
+    <input type="text" id="userInput" placeholder="Type your message..." onkeydown="if(event.key==='Enter'){sendMessage()}">
+  </div>
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
